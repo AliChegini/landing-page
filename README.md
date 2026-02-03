@@ -13,4 +13,4 @@ A small, review-friendly landing page built with **plain HTML + CSS** and a litt
 Open `index.html` in a browser.
 
 ## Live demo
-GitHub Pages: *()*
+GitHub Pages: *(https://alichegini.github.io/landing-page/)*
