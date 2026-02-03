@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Landing Page Template</title>
+    <meta
+      name="description"
+      content="Responsive landing page template with small JavaScript interactions."
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="#">AgencyTemplate</a>
+
+        <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu">
+          Menu
+        </button>
+
+        <nav class="site-nav" id="navMenu">
+          <a href="#services">Services</a>
+          <a href="#work">Work</a>
+          <a href="#faq">FAQ</a>
+          <a class="btn btn-primary" href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Main -->
+    <main>
+      <!-- Hero -->
+      <section class="hero">
+        <div class="container hero-inner">
+          <div class="hero-copy">
+            <h1>Responsive landing page template</h1>
+            <p>
+              Clean HTML + CSS structure, responsive layout, and small JavaScript interactions.
+              Built to be easy to review.
+            </p>
+            <div class="hero-cta">
+              <a class="btn btn-primary" href="#contact">Start a project</a>
+              <a class="btn btn-ghost" href="#faq">See FAQ</a>
+            </div>
+            <ul class="hero-points">
+              <li>Semantic HTML</li>
+              <li>Responsive grid/flex</li>
+              <li>Mobile nav + FAQ accordion</li>
+            </ul>
+          </div>
+
+          <div class="hero-card" aria-hidden="true">
+            <div class="card">
+              <div class="card-title">Template highlights</div>
+              <div class="card-text">
+                Sections, spacing system, buttons, cards, and accessible interactions.
+              </div>
+              <div class="card-metric">
+                <span class="metric-num">3</span>
+                <span class="metric-label">sections ready</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Services -->
+      <section class="section" id="services">
+        <div class="container">
+          <div class="section-head">
+            <h2>Services</h2>
+            <p>Three simple cards to show layout and component consistency.</p>
+          </div>
+
+          <div class="grid-3">
+            <article class="card">
+              <h3>HTML/CSS slicing</h3>
+              <p>Clean structure, consistent spacing, responsive behavior.</p>
+            </article>
+
+            <article class="card">
+              <h3>Reusable components</h3>
+              <p>Buttons, cards, and sections that look consistent across pages.</p>
+            </article>
+
+            <article class="card">
+              <h3>Fast iteration</h3>
+              <p>Small changes don’t break everything. Easy to maintain.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Work -->
+      <section class="section section-alt" id="work">
+        <div class="container">
+          <div class="section-head">
+            <h2>Work</h2>
+            <p>A simple grid to demonstrate responsive layout and alignment.</p>
+          </div>
+
+          <div class="grid-2">
+            <div class="card">
+              <h3>Project A</h3>
+              <p>Landing page layout with hero, sections, and CTA.</p>
+            </div>
+            <div class="card">
+              <h3>Project B</h3>
+              <p>FAQ accordion and mobile menu with minimal JavaScript.</p>
+            </div>
+            <div class="card">
+              <h3>Project C</h3>
+              <p>Clean typography and spacing using CSS variables.</p>
+            </div>
+            <div class="card">
+              <h3>Project D</h3>
+              <p>Accessibility basics: focus styles and ARIA states.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ -->
+      <section class="section" id="faq">
+        <div class="container">
+          <div class="section-head">
+            <h2>FAQ</h2>
+            <p>Accordion behavior is handled with a few lines of JavaScript.</p>
+          </div>
+
+          <div class="faq">
+            <div class="faq-item">
+              <button class="faq-q" type="button" aria-expanded="false">
+                Is this responsive?
+              </button>
+              <div class="faq-a" hidden>
+                Yes. Layout adapts from mobile to desktop using flex/grid and sensible widths.
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-q" type="button" aria-expanded="false">
+                Is there any framework?
+              </button>
+              <div class="faq-a" hidden>
+                No. Plain HTML/CSS/JS so reviewers can see fundamentals clearly.
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-q" type="button" aria-expanded="false">
+                What JavaScript is included?
+              </button>
+              <div class="faq-a" hidden>
+                Only a mobile menu toggle and this accordion. No libraries.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section class="section section-alt" id="contact">
+        <div class="container">
+          <div class="section-head">
+            <h2>Contact</h2>
+            <p>A basic form section to show spacing, inputs, and states.</p>
+          </div>
+
+          <form class="form" action="#" method="post" onsubmit="return false;">
+            <div class="form-row">
+              <label>
+                <span>Name</span>
+                <input type="text" name="name" placeholder="Your name" />
+              </label>
+
+              <label>
+                <span>Email</span>
+                <input type="email" name="email" placeholder="you@example.com" />
+              </label>
+            </div>
+
+            <label>
+              <span>Message</span>
+              <textarea name="message" rows="5" placeholder="What do you need?"></textarea>
+            </label>
+
+            <div class="form-actions">
+              <button class="btn btn-primary" type="submit">Send</button>
+              <button class="btn btn-ghost" type="reset">Reset</button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>© <span id="year"></span> AgencyTemplate</p>
+        <p class="muted">Built with HTML/CSS + minimal JS.</p>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
